@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isClicked, setIsClicked] = useState(true);
 
   return (
-    <nav className="flex items-center justify-between px-10 h-[80px]">
+    <nav className="flex items-center justify-between px-10 h-[80px] shadow-lg">
       <div className="text-3xl flex items-center gap-2 text-blue-600">
         <HiOutlineCodeBracket />{" "}
         <span className="text-xl font-primary text-slate-800 font-semibold">
@@ -21,31 +21,31 @@ const Navbar = () => {
         <ul className="hidden lg:flex gap-x-10">
           <a
             href="#"
-            className="hover:text-base duration-300 hover:translate-y-[-8px] ease-in-out font-primary font-semibold"
+            className="hover:text-base duration-300 transition hover:translate-y-[-8px] font-primary font-semibold"
           >
             Pricing
           </a>
           <a
             href="#"
-            className="hover:text-base duration-300 hover:translate-y-[-8px] ease-in-out font-primary font-semibold"
+            className="hover:text-base duration-300 transition hover:translate-y-[-8px] font-primary font-semibold"
           >
             Docs
           </a>
           <a
             href="#"
-            className="hover:text-base duration-300 hover:translate-y-[-8px] ease-in-out font-primary font-semibold"
+            className="hover:text-base duration-300 transition hover:translate-y-[-8px] font-primary font-semibold"
           >
             Change log
           </a>
           <a
             href="#"
-            className="hover:text-base duration-300 hover:translate-y-[-8px] ease-in-out font-primary font-semibold"
+            className="hover:text-base duration-300 transition hover:translate-y-[-8px] font-primary font-semibold"
           >
             Blogs
           </a>
           <a
             href="#"
-            className="hover:text-base duration-300 hover:translate-y-[-8px] ease-in-out font-primary font-semibold"
+            className="hover:text-base duration-300 transition hover:translate-y-[-8px] font-primary font-semibold"
           >
             Login
           </a>
@@ -65,7 +65,7 @@ const Navbar = () => {
       </button>
 
       {!isClicked && (
-        <div className="absolute left-0 top-[80px] w-full h-[calc(100vh-80px)] py-10">
+        <div className="absolute left-0 top-[80px] w-full h-[calc(100vh-80px)] bg-white">
           <ul className="flex flex-col lg:hidden gap-y-2 border-b px-8 py-6">
             <a
               href="#"

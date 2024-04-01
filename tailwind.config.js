@@ -11,7 +11,8 @@ export default {
       },
       fontFamily: {
         primary: ['Urbanist', 'sans-serif'],
-        special: ['Playfair Display', 'serif']
+        special: ['Playfair Display', 'serif'],
+        poppins: [' Poppins', 'sans-serif']
       },
       screens: {
         'sm': '640px',
